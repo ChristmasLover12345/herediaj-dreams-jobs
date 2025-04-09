@@ -1,9 +1,22 @@
 'use client'
 
 
+import { MediaCardProps } from '@/utils/interface';
 import React, { useRef, useState } from 'react'
 
-const JobBarComponent = (props: {background: string, imageOnRight: boolean, LogoUrl: string, CardtTitle: string, CardImageUrl: string, CardVideoUrl: string, CardAudioUrl: string}) => {
+const JobBarComponent = ({
+  background,
+  imageOnRight,
+  LogoUrl,
+  LogoSize,
+  Description,
+  textColor,
+  ButtonColor,
+  cardTitle,
+  cardImageUrl,
+  cardVideoUrl,
+  cardAudioUrl,
+}: MediaCardProps) => {
 
    const [hovered, setHovered] = useState(false);
       const videoRef = useRef<HTMLVideoElement>(null);
@@ -25,19 +38,19 @@ const JobBarComponent = (props: {background: string, imageOnRight: boolean, Logo
 
   return (
     
-   <div className={`relative flex w-full flex-row ${"bg-[#" + props.background + "]" } ${props.imageOnRight ? 'flex-row-reverse' : 'flex-row'}`}>
+   <div className={`relative flex w-full justify-around h-[500px] flex-row p-8 ${"bg-"+ background  } ${imageOnRight ? 'flex-row-reverse' : 'flex-row'}`}>
 
-    <img src={props.LogoUrl} alt="logo" className={`absolute h-[48px] w-[48px] ${props.imageOnRight ? 'end-1 top-1' : 'start-1 top-1'}`}/>
+    <img src={LogoUrl} alt="logo" className={`absolute ${LogoSize} ${imageOnRight ? 'start-5 top-5' : 'end-5 top-5'}`}/>
 
     <div
-      className="relative w-[40%] h-full rounded-2xl overflow-hidden shadow-lg group cursor-pointer transform transition-transform duration-300 hover:scale-105"
+      className="relative w-[40%] h-[90%] self-center rounded-2xl overflow-hidden shadow-lg group cursor-pointer transform transition-transform duration-300 hover:scale-105"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {/* Image (visible when not hovered) */}
       <img
-        src={props.CardImageUrl}
-        alt={props.CardtTitle}
+        src={cardImageUrl}
+        alt={cardTitle}
         className={`absolute w-full h-full object-cover transition-opacity duration-500 ${
           hovered ? "opacity-0" : "opacity-100"
         }`}
@@ -46,7 +59,7 @@ const JobBarComponent = (props: {background: string, imageOnRight: boolean, Logo
       {/* Video (visible on hover) */}
       <video
         ref={videoRef}
-        src={props.CardVideoUrl}
+        src={cardVideoUrl}
         muted
         loop
         className={`absolute w-full h-full object-cover transition-opacity duration-500 ${
@@ -56,24 +69,28 @@ const JobBarComponent = (props: {background: string, imageOnRight: boolean, Logo
 
       {/* Title */}
       <div className="absolute bottom-4 left-4 z-10">
-        <h2 className="text-white text-3xl font-semibold drop-shadow-md">{props.CardtTitle}</h2>
+        <h2 className="text-white text-3xl font-semibold drop-shadow-md">{cardTitle}</h2>
       </div>
 
       {/* Audio */}
-      <audio loop ref={audioRef} src={props.CardAudioUrl} />
+      <audio loop ref={audioRef} src={cardAudioUrl} />
     </div>
 
-    <div className='flex flex-col w-[60%] h-full items-center'>
+    <div className='flex flex-col w-[55%] self-center h-full items-center justify-end'>
 
       <div className='w-full h-[80%] overflow-hidden pb-2'>
 
-        <h3></h3>
+        <h3 className={`text-2xl font-semibold ${textColor} ${imageOnRight ? 'text-start' : 'text-end'}`}>
+
+          {Description}
+
+        </h3>
 
       </div>
 
-      <div className={`flex w-full h-[20%] ${props.imageOnRight ? 'justify-end' : 'justify-start'}`}>
+      <div className={`flex w-full h-[10%] ${imageOnRight ? 'justify-start' : 'justify-end'}`}>
 
-        <button className=''> Learn More </button>
+        <button className={`rounded-lg ${ButtonColor} ${textColor} border-[1px] shadow-2xl px-2 cursor-pointer transform transition-transform duration-300 hover:scale-105`}> Learn More </button>
 
       </div>
 

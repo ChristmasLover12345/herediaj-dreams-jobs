@@ -1,8 +1,13 @@
-export type JobBar = {
-    imageUrl: string;
-    title: string;
-    description: string;
-    onButtonClick?: () => void;
-    logoUrl?: string;
-    imageOnRight?: boolean;
-  };
+export interface MediaCardProps {
+  background: string;
+  imageOnRight: boolean;
+  LogoUrl: string;
+  LogoSize: string;
+  Description: string;
+  textColor: string;
+  ButtonColor: string;
+  cardTitle: string;
+  cardImageUrl: string;
+  cardVideoUrl: string;
+  cardAudioUrl: string;
+}

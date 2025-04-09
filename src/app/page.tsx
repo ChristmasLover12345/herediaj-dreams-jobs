@@ -1,24 +1,27 @@
-import JobCardComponent from "@/Components/JobCardComponent";
+import JobBarComponent from "@/Components/JobBarComponent";
+
 
 export default function Home() {
   return (
-   <div className="flex flex-col items-center min-h-screen p-4 bg-[#1b232b]">
+   <div className="flex flex-col items-center min-h-screen  bg-[#1b232b]">
       
-    <h2 className="text-[40px] mt-5">My Top 5 jobs I wanna work in</h2>
+    <h2 className="text-[40px] mt-5 mb-5">My Top 5 jobs I wanna work in</h2>
 
 
-    {/* <div className="flex flex-col  xl:flex-row w-full items-center justify-center xl:justify-evenly xl:mb-10">
-      <JobCardComponent title="Valve" videoUrl="./Valve1998intro.mp4" imageUrl="./valvecorplogo.png" audioUrl="./Valve-Hazardous.mp3" />
-      <JobCardComponent title="Valve" videoUrl="./Valve1998intro.mp4" imageUrl="./valvecorplogo.png" audioUrl="./Valve-Hazardous.mp3" />
-    </div>
+ 
 
-    <div className="flex flex-col xl:flex-row w-full justify-center items-center xl:justify-evenly">
-      <JobCardComponent title="Valve" videoUrl="./Valve1998intro.mp4" imageUrl="./valvecorplogo.png" audioUrl="./Valve-Hazardous.mp3" />
-      <JobCardComponent title="Valve" videoUrl="./Valve1998intro.mp4" imageUrl="./valvecorplogo.png" audioUrl="./Valve-Hazardous.mp3" />
-      <JobCardComponent title="Valve" videoUrl="./Valve1998intro.mp4" imageUrl="./valvecorplogo.png" audioUrl="./Valve-Hazardous.mp3" />
-    </div> */}
-
-    
+    <JobBarComponent  
+    background="red-500"
+    imageOnRight={false}
+    LogoUrl="./ValveLogo.png"
+    LogoSize="w-[100px] h-[30px]"
+    Description="I love valve and videogames and I think that valve is really goof at making games and i wanna woek there"
+    textColor="text-black"
+    ButtonColor="bg-gradian-to-r from-blue-500 to-blue-700"
+    cardTitle="Valve"
+    cardImageUrl="./valvecorplogo.png"
+    cardVideoUrl="./Valve1998intro.mp4"
+    cardAudioUrl="./Valve-Hazardous.mp3"/>
 
 
    </div>
