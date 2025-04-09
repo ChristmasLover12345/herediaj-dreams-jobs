@@ -38,12 +38,11 @@ const JobBarComponent = ({
 
   return (
     
-   <div className={`relative flex w-full justify-around h-[500px] flex-row p-8 ${"bg-"+ background  } ${imageOnRight ? 'flex-row-reverse' : 'flex-row'}`}>
+   <div className={`relative flex w-full justify-around h-[500px] flex-row p-8 ${background} ${imageOnRight ? 'flex-row-reverse' : 'flex-row'}`}>
 
     <img src={LogoUrl} alt="logo" className={`absolute ${LogoSize} ${imageOnRight ? 'start-5 top-5' : 'end-5 top-5'}`}/>
 
-    <div
-      className="relative w-[40%] h-[90%] self-center rounded-2xl overflow-hidden shadow-lg group cursor-pointer transform transition-transform duration-300 hover:scale-105"
+    <div className="relative w-[40%] h-[90%] self-center rounded-2xl overflow-hidden shadow-lg group cursor-pointer transform transition-transform duration-300 hover:scale-105"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
