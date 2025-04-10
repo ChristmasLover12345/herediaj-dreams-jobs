@@ -40,8 +40,8 @@ export default function Home() {
     cardImageUrl="./images/Facepunch hero.png"
     cardVideoUrl="./videos/FacepunchOfficeTour.mp4"
     cardAudioUrl="./audios/RustFishVillgae.mp3"
-    CompanyLink=""
-    LearnMoreUrl=""/>
+    CompanyLink="https://facepunch.com"
+    LearnMoreUrl="/Facepunch"/>
 
     {/* Nvidia */}
   <JobBarComponent  
