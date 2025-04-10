@@ -10,4 +10,6 @@ export interface MediaCardProps {
   cardImageUrl: string;
   cardVideoUrl: string;
   cardAudioUrl: string;
+  LearnMoreUrl: string;
+  CompanyLink: string;
 }

@@ -2,6 +2,7 @@
 
 
 import { MediaCardProps } from '@/utils/interface';
+import { useRouter } from 'next/navigation';
 import React, { useRef, useState } from 'react'
 
 const JobBarComponent = ({
@@ -16,12 +17,15 @@ const JobBarComponent = ({
   cardImageUrl,
   cardVideoUrl,
   cardAudioUrl,
+  LearnMoreUrl,
+  CompanyLink
 }: MediaCardProps) => {
 
    const [hovered, setHovered] = useState(false);
       const videoRef = useRef<HTMLVideoElement>(null);
       const audioRef = useRef<HTMLAudioElement>(null);
-    
+      const Router = useRouter()
+  
       const handleMouseEnter = () => {
         setHovered(true);
         videoRef.current?.play();
@@ -36,11 +40,18 @@ const JobBarComponent = ({
         audioRef.current!.currentTime = 0;
       };
 
+      const handleLearnMoreClick = () => {
+        Router.push(LearnMoreUrl)
+      }
+
+     
+
   return (
     
-   <div className={`relative flex w-full justify-around h-[500px] flex-row p-8 ${background} ${imageOnRight ? 'flex-row-reverse' : 'flex-row'}`}>
-
+   <div className={`relative flex w-full justify-around h-[500px]  flex-row p-8 ${background} ${imageOnRight ? 'flex-row-reverse' : 'flex-row'}`}>
+    <a href={CompanyLink} target='_blank'>
     <img src={LogoUrl} alt="logo" className={`absolute ${LogoSize} ${imageOnRight ? 'start-5 top-5' : 'end-5 top-5'}`}/>
+    </a>
 
     <div className="relative w-[40%] h-[90%] self-center rounded-2xl overflow-hidden shadow-lg group cursor-pointer transform transition-transform duration-300 hover:scale-105"
       onMouseEnter={handleMouseEnter}
@@ -55,7 +66,7 @@ const JobBarComponent = ({
         }`}
       />
 
-      {/* Video (visible on hover) */}
+      {/* Video visible on hover */}
       <video
         ref={videoRef}
         src={cardVideoUrl}
@@ -88,9 +99,9 @@ const JobBarComponent = ({
       </div>
 
       <div className={`flex w-full h-[10%] ${imageOnRight ? 'justify-start' : 'justify-end'}`}>
-
-        <button className={`rounded-lg ${ButtonColor} ${textColor} border-[1px] shadow-2xl px-2 cursor-pointer transform transition-transform duration-300 hover:scale-105`}> Learn More </button>
-
+       
+        <button onClick={handleLearnMoreClick} className={`rounded-lg ${ButtonColor} ${textColor} border-[1px] shadow-2xl px-2 cursor-pointer transform transition-transform duration-300 hover:scale-105`}> Learn More </button>
+       
       </div>
 
     </div>
