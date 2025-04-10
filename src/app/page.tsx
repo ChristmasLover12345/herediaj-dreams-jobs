@@ -24,7 +24,7 @@ export default function Home() {
     cardImageUrl="./images/valvecorplogo.png"
     cardVideoUrl="./videos/Valve1998intro.mp4"
     cardAudioUrl="./audios/Valve-Hazardous.mp3"
-    CompanyLink=""
+    CompanyLink="https://www.valvesoftware.com/en/"
     LearnMoreUrl="/Valve"/>
 
     {/* Facepunch */}

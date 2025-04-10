@@ -32,7 +32,10 @@ const page = () => {
             </div>
             <div>
               <h1 className="text-3xl font-bold">Valve Corporation</h1>
-              <p className="text-xl mt-1">Game Developer</p>
+              <a href="https://www.valvesoftware.com/en/jobs?job_id=51" target='_blank'>
+                <p className="text-xl mt-1 underline">Game Developer</p>
+              </a>
+              
               <div className="flex items-center mt-2">
                 <MapPin className="w-4 h-4 mr-1" />
                 <div>Bellevue, Washington</div>
