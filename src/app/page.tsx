@@ -5,6 +5,8 @@ export default function Home() {
   return (
    <div className="flex flex-col items-center min-w-screen max-w-screen min-h-screen bg-[#1b232b] ">
       
+    {/* ADD A HERO IMAGE OR SOMETHING, THE TITTLE LOOKS TOO DRY */}
+
     <h2 className="text-[40px] mt-5 mb-5 bg-g">My Top 5 jobs I wanna work in</h2>
 
 
