@@ -51,11 +51,11 @@ export default function Home() {
     LogoSize="w-[48px] h-[38px]"
     Description="I love facepunch and videogames and I think that valve is really goof at making games and i wanna woek there"
     textColor="text-black"
-    ButtonColor="gray-800 hover:bg-gray-700"
+    ButtonColor=" hover:bg-lime-600"
     cardTitle="NVIDIA"
-    cardImageUrl="./images/Facepunch hero.png"
-    cardVideoUrl="./videos/FacepunchOfficeTour.mp4"
-    cardAudioUrl="./audios/RustFishVillgae.mp3"
+    cardImageUrl="./images/Gforce.jpeg"
+    cardVideoUrl="./videos/nvidia3dAnimation.mp4"
+    cardAudioUrl="./audios/GForceAudio.mp3"
     CompanyLink="https://www.nvidia.com/en-us/"
     LearnMoreUrl="/Nvidia"/>
 
