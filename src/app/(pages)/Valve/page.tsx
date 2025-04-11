@@ -145,6 +145,34 @@ const page = () => {
                 <Award className="w-4 h-4 mr-2" />
                 User Experience
                 </div>
+                <div className="bg-[#3a9efd] text-white px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                Javascript
+                </div>
+                <div className="bg-[#3a9efd] text-white px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                C#
+                </div>
+                <div className="bg-[#3a9efd] text-white px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                SQL
+                </div>
+                <div className="bg-[#3a9efd] text-white px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                Next.js
+                </div>
+                <div className="bg-[#3a9efd] text-white px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                React
+                </div>
+                <div className="bg-[#3a9efd] text-white px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                Tailwind
+                </div>
+                <div className="bg-[#3a9efd] text-white px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                Rest API
+                </div>
             </div>
             </div>
 

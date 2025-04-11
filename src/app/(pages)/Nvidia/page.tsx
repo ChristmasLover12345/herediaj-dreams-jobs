@@ -34,7 +34,7 @@ const page = () => {
               </a>
               <div className="flex items-center mt-2 text-black">
                 <MapPin className="w-4 h-4 mr-1" />
-                <div>CA, Santa Clara</div>
+                <div>Santa Clara, CA</div>
               </div>
             </div>
           </div>
@@ -128,8 +128,35 @@ const page = () => {
               </div>
               <div className="bg-[#76b900] text-black px-4 py-2 rounded-lg text-base font-medium flex items-center">
                 <Award className="w-4 h-4 mr-2" />
-                Full-stack development
+                Javascript
               </div>
+              <div className="bg-[#76b900] text-black px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                C#
+              </div>
+              <div className="bg-[#76b900] text-black px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                SQL
+              </div>
+              <div className="bg-[#76b900] text-black px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                React
+              </div>
+              <div className="bg-[#76b900] text-black px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                Next.js
+              </div>
+              <div className="bg-[#76b900] text-black px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                Tailwind
+              </div>
+              <div className="bg-[#76b900] text-black px-4 py-2 rounded-lg text-base font-medium flex items-center">
+                <Award className="w-4 h-4 mr-2" />
+                Rest API
+              </div>
+              
+            
+              
             </div>
           </div>
         </div>

@@ -61,19 +61,19 @@ export default function Home() {
 
     {/* unity? */}
   <JobBarComponent  
-    background="bg-red-500"
+    background="bg-black"
     imageOnRight={true}
-    LogoUrl="./images/ValveLogo.png"
-    LogoSize="w-[100px] h-[30px]"
+    LogoUrl="./images/Unity-Emblem.png"
+    LogoSize="w-[100px] h-[40px]"
     Description="I love valve and videogames and I think that valve is really goof at making games and i wanna woek there"
-    textColor="text-black"
-    ButtonColor="bg-red-800 hover:bg-red-700"
-    cardTitle="Valve"
-    cardImageUrl="./images/valvecorplogo.png"
-    cardVideoUrl="./videos/Valve1998intro.mp4"
-    cardAudioUrl="./audios/Valve-Hazardous.mp3"
-    CompanyLink=""
-    LearnMoreUrl=""/>
+    textColor="text-white"
+    ButtonColor=" hover:bg-gray-700"
+    cardTitle="Unity"
+    cardImageUrl="./images/09_2023_Blog_Hero_image_Penguin_Option_3__1230x410_.webp"
+    cardVideoUrl="./videos/unityVideo.mp4"
+    cardAudioUrl="./audios/UnityAudio.mp3"
+    CompanyLink="https://unity.com"
+    LearnMoreUrl="/Unity"/>
 
 
   <JobBarComponent  
