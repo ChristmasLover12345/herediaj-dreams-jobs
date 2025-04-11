@@ -4,12 +4,12 @@ import React from 'react'
 import { ArrowLeft, MapPin, Users, Briefcase, Award } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
-const page = () => {
+const Page = () => {
 
-    const Router = useRouter()
+    const router = useRouter()
 
     const GoBack = () => {
-        Router.push(`/`)
+        router.push(`/`)
     }
 
   return (
@@ -59,7 +59,7 @@ const page = () => {
               <h3 className="text-xl font-semibold text-white">Culture</h3>
             </div>
             <p className="text-[#bdc3c7]">
-              Roblox's mission to connect a billion people with optimism and civility stands out. The entrepreneurial nature of the team and impact-driven projects reflect a culture that encourages initiative and innovation.
+              Roblox&#39;s mission to connect a billion people with optimism and civility stands out. The entrepreneurial nature of the team and impact-driven projects reflect a culture that encourages initiative and innovation.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ const page = () => {
         </div>
 
         <div className="p-6 mb-8 bg-[#1a1d21] rounded-xl border border-[#2f343b]">
-          <h2 className="text-2xl font-bold mb-6 text-white">Skills They're Looking For</h2>
+          <h2 className="text-2xl font-bold mb-6 text-white">Skills They&#39;re Looking For</h2>
           <div className="flex flex-wrap gap-3">
             <div className="bg-[#3e5c7f] text-white px-4 py-2 rounded-lg text-base font-medium flex items-center">
               <Award className="w-4 h-4 mr-2" />
@@ -164,4 +164,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

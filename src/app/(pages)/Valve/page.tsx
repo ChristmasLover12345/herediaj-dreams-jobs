@@ -4,12 +4,12 @@ import React from 'react'
 import { ArrowLeft, MapPin, Users, Briefcase, Award } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
-const page = () => {
+const Page = () => {
 
-    const Router = useRouter()
+    const router = useRouter()
 
     const GoBack = () => {
-        Router.push(`/`)
+        router.push(`/`)
     }
 
   return (
@@ -65,8 +65,8 @@ const page = () => {
                 <h3 className="text-xl font-semibold">Culture</h3>
               </div>
               <p>
-                Valve's organizational structure means no bosses and the freedom to work on
-                projects you're passionate about. 
+                Valve&#39;s organizational structure means no bosses and the freedom to work on
+                projects you&#39;re passionate about. 
               </p>
             </div>
 
@@ -96,7 +96,7 @@ const page = () => {
 
           {/* Skills They're Looking For */}
           <div className="p-6 mb-8 bg-[#2e2e2e] rounded-lg border border-[#444444]">
-            <h2 className="text-2xl font-bold mb-6 text-white">Skills They're Looking For</h2>
+            <h2 className="text-2xl font-bold mb-6 text-white">Skills They&#39;re Looking For</h2>
             <div className="flex flex-wrap gap-3">
                 <div className="bg-[#f27847] text-white px-4 py-2 rounded-lg text-base font-medium flex items-center">
                 <Award className="w-4 h-4 mr-2" />
@@ -184,4 +184,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -24,7 +24,7 @@ const JobBarComponent = ({
    const [hovered, setHovered] = useState(false);
       const videoRef = useRef<HTMLVideoElement>(null);
       const audioRef = useRef<HTMLAudioElement>(null);
-      const Router = useRouter()
+      const router = useRouter()
   
       const handleMouseEnter = () => {
         setHovered(true);
@@ -41,7 +41,7 @@ const JobBarComponent = ({
       };
 
       const handleLearnMoreClick = () => {
-        Router.push(LearnMoreUrl)
+        router.push(LearnMoreUrl)
       }
 
      

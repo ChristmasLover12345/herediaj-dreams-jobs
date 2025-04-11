@@ -4,17 +4,17 @@ import React from 'react'
 import { ArrowLeft, MapPin, Users, Briefcase, Award } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
-const page = () => {
+const Page = () => {
 
-    const Router = useRouter()
+    const router = useRouter()
 
     const GoBack = () => {
-        Router.push(`/`)
+        router.push(`/`)
     }
 
   return (
     
-    // REMEMBER TO CHANGE ALL THE INFO ON THE PAGE TO FACE PUNCH STUFF
+    
 <div className="bg-[#111111] min-h-screen p-6 text-[#e0e0e0]">
   <div className="max-w-6xl mx-auto">
     <div onClick={GoBack} className="inline-flex items-center text-[#e5484d] hover:text-[#ff6d6d] mb-6 cursor-pointer transition-colors">
@@ -83,14 +83,14 @@ const page = () => {
             </div>
             <p>
               The team is flexible—join them from anywhere, or collaborate in person. The studio fosters 
-              a productive environment no matter where you're based.
+              a productive environment no matter where you&#39;re based.
             </p>
           </div>
         </div>
 
         {/* Skills They're Looking For */}
         <div className="p-6 mb-8 bg-[#292929] rounded-lg border border-[#444444]">
-          <h2 className="text-2xl font-bold mb-6 text-[#f2f2f2]">Skills They're Looking For</h2>
+          <h2 className="text-2xl font-bold mb-6 text-[#f2f2f2]">Skills They&#39;re Looking For</h2>
           <div className="flex flex-wrap gap-3">
             <div className="bg-[#e5484d] text-white px-4 py-2 rounded-lg text-base font-medium flex items-center">
               <Award className="w-4 h-4 mr-2" />
@@ -178,4 +178,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
