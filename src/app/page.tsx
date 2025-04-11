@@ -45,19 +45,19 @@ export default function Home() {
 
     {/* Nvidia */}
   <JobBarComponent  
-    background="bg-gray-900"
+    background="bg-[#76b900]"
     imageOnRight={false}
     LogoUrl="./images/nvidia logo.png"
     LogoSize="w-[48px] h-[38px]"
     Description="I love facepunch and videogames and I think that valve is really goof at making games and i wanna woek there"
-    textColor="text-white"
+    textColor="text-black"
     ButtonColor="gray-800 hover:bg-gray-700"
-    cardTitle="Facepunch"
+    cardTitle="NVIDIA"
     cardImageUrl="./images/Facepunch hero.png"
     cardVideoUrl="./videos/FacepunchOfficeTour.mp4"
     cardAudioUrl="./audios/RustFishVillgae.mp3"
-    CompanyLink=""
-    LearnMoreUrl=""/>
+    CompanyLink="https://www.nvidia.com/en-us/"
+    LearnMoreUrl="/Nvidia"/>
 
     {/* unity? */}
   <JobBarComponent  
