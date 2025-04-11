@@ -6,10 +6,10 @@ import { useRouter } from 'next/navigation';
 
 const page = () => {
 
-    const router = useRouter()
+    const Router = useRouter()
 
     const GoBack = () => {
-        router.push(`/`)
+        Router.push(`/`)
     }
 
   return (

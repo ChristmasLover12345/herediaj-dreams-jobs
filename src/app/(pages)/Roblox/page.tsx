@@ -1,15 +1,15 @@
 'use client'
 
 import React from 'react'
-import { ArrowLeft, MapPin, Users, Briefcase, Heart, Award } from 'lucide-react';
+import { ArrowLeft, MapPin, Users, Briefcase, Award } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 const page = () => {
 
-    const router = useRouter()
+    const Router = useRouter()
 
     const GoBack = () => {
-        router.push(`/`)
+        Router.push(`/`)
     }
 
   return (

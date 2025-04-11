@@ -24,7 +24,7 @@ export default function Home() {
     imageOnRight={false}
     LogoUrl="./images/ValveLogo.png"
     LogoSize="w-[100px] h-[30px]"
-    Description="I love valve and their videogames, ever since I was a kid i've heard nothing but praise for them, and after getting my own computer and finallytryng out steam and their catalog, It's definetly the place I want to end up in"
+    Description="I love valve and their videogames, ever since I was a kid i've heard nothing but praise for them, and after getting my own computer and finally trying out steam and their catalog, It's definetly the place I want to end up in"
     textColor="text-black"
     ButtonColor="bg-red-800 hover:bg-red-700"
     cardTitle="Valve"
