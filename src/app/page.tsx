@@ -86,7 +86,7 @@ export default function Home() {
   <JobBarComponent  
     background="bg-gray-900"
     imageOnRight={false}
-    LogoUrl="./images/robloxLogoCard.webp"
+    LogoUrl="./images/RobloxLogoCard.webp"
     LogoSize="w-[48px] h-[48px]"
     Description="Roblos is a game engine that has allowed a lof of fantastic games to be made, games that i still play to this day. I want to be part of the team that makes it esaier for developers to make their dreams come true"
     textColor="text-white"

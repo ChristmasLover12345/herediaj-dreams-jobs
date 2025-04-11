@@ -25,7 +25,7 @@ const Page = () => {
       <div className="bg-[#2c3e50] text-white p-8">
         <div className="flex items-center">
           <div className="bg-[#1e2126] p-1 rounded-lg mr-6 shadow-md border border-[#3c3c3c]">
-            <img src="./images/RobloxLogo.png" alt="Roblox logo" className="w-28 h-28 rounded-md" />
+            <img src="./images/robloxLogo.png" alt="Roblox logo" className="w-28 h-28 rounded-md" />
           </div>
           <div>
             <h1 className="text-3xl font-bold">Roblox</h1>
